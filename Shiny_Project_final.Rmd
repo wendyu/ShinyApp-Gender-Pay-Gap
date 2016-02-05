@@ -69,7 +69,7 @@ library(googleVis)
 #set factors
 factors<-c("Education","Race","Region","Marital_Status","Work_time","Job_type")
 #load data
-setwd("~/Desktop/nyc DSB/Shiny")
+#setwd("~/Desktop/nyc DSB/Shiny")
 all<-read.table("AllIncomeData.txt",header=T,sep="\t")
 
 fluidPage(
@@ -120,15 +120,15 @@ From exploring the data above, here are some of my observations:
 
 * Over the years, the absolute differences in average income between men and women have increased. However, percent differences in average income between men and women have decreased. (To see these effects, select "Difference_Income" and "Difference_Income_Norm" at y-axis.) 
 * In 1970s, men made about 80% to 100% more than women. In 2014, men made about 20% more than women. 
-* Gender pay gap has reduced for the past few decades, but remain largely unchanged for last 5 years. 
-* **Education factor**: pay gap for people with master and doctoral degree is the lowest and remain unchanged for the past decades. There is a trend for reduction in pay gap for other education levels. 
-* **Race**: We see a general decreasing trend for all races. In 2014, pay gap is the largest for white and lowest for black, about 52% and 28% respectively. 
-* **Region**: no difference in pay gap among regions is observed. 
-* **Marital Status**: pay gap is considerably larger for married ones than divorced or single. This could be explained by the traditional gender roles. In a marriage, husband is expected to be the financial provider while wife is expected to stay at home and provide domestic needs.
-* **Work time**: there is a reduction in pay gap for full time employees. Interestingly, for part time employees, female were paid about 0-20% more than male between 1980 to 2010. In 2014, gender pay gap is almost gone for part time employees. This phenomenon can also be due to stereotypical gender roles. Part time jobs offer more flexibility in schedule so women can balance work and family more easily. On the other hand, very few full time jobs offers the flexibility that women require to take care of her family, for example, to pick up kids or to go to doctor's appointments. Women are penalized for taking time off and therefore hindering their career development. 
-* **Job type**: gender pay gap remains largely unchanged for all job types except sales and armed forces. We see a decrease in pay gap for both sales and armed forces. Gender pay gap reached zero in 2000 for armed forces. 
+* Gender pay gap has reduced for the past few decades, but remain largely unchanged for the past 5 years. 
+* **Education factor**: pay gap for people with a master or doctoral degree is the lowest and remain unchanged for the past decades. There is a trend for reduction in pay gap for other education levels. 
+* **Race**: We see a general decreasing trend for all races. In 2014, pay gap is the largest for white and lowest for black. Men were paid about 52% and 28% more than women respectively. 
+* **Region**: no difference in pay gap among different regions is observed. 
+* **Marital Status**: pay gap is considerably larger for married ones than divorced or single. This could be explained by the traditional gender roles. In a marriage, husband is expected to be the financial provider while wife is expected to stay at home and provide domestic needs. Therefore, it makes sense to see a large gender pay gap for married couples. 
+* **Work time**: there is a reduction in pay gap for full time employees. Interestingly, for part time employees, female were paid about 0-20% more than male between 1980 to 2010. In 2014, gender pay gap is almost gone for part time employees. This phenomenon can also be due to stereotypical gender roles. Part time jobs offer more flexibility in schedule so women can balance work and family more easily. On the other hand, very few full time jobs offer the flexibility that women require to take care of her family, for example, to pick up kids or to go to doctor's appointments. Women are penalized for taking time off and therefore hindering their career development. 
+* **Job type**: gender pay gap remains largely unchanged for all job types except for sales and armed forces. We see a decrease in pay gap for both sales and armed forces. Gender pay gap reached zero in 2000 for armed forces. 
 
-Overall, gender pay gap had shrunk for the past few decades, but the decrease has stopped for at least 5 years. To date, women are still making about 20% less then men. Gender pay gap is a continuous problem in the United States, we should first seek an understanding of stereotypical gender roles, we will then be a better position to fix gender pay gap. 
+Overall, the good news is that gender pay gap has shrunk for the past few decades. However, the decrease in the pay gap has stopped for at least 5 years. To date, women are still making about 20% less then men. Gender pay gap is a continuous problem in the United States, we should first seek an understanding of stereotypical gender roles, we will then be at a better position to fix gender pay gap. 
 </font>
 
 
